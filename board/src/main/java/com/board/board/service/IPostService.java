@@ -1,9 +1,11 @@
 package com.board.board.service;
 
 import com.board.board.model.Post;
+import com.board.board.model.dto.Result;
 import com.board.board.model.dto.ResultCode;
 
 import java.util.List;
+import java.util.Map;
 
 public interface IPostService {
 
@@ -12,12 +14,16 @@ public interface IPostService {
 
     public List<Post> findPostListWithPostName(String postName);
 
-    public ResultCode savePost(Post post);
+    public Result savePost(Post post);
 
-    public ResultCode updatePost(Post updatePost);
+    public Result updatePost(Post updatePost);
 
-    public ResultCode deletePost(Long postSeq);
+    public Result deletePost(Long postSeq);
 
     public List<Post> findAll();
+
+    public List<Post> findWithPostName(Map<String,Object> paramMap);
+
+
 
 }
