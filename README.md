@@ -1,9 +1,6 @@
-# Board Server
-
-보드 게시판 만들기  서버
+# webClientTestServer
 
 
-1. 보드 관련 curd 
-2. paging 기능
-3. 동적 쿼리
-
+# 인증 
+## 시나리오 
+### 1. 헤더에 첨부된 accessKey와 secretKey가 db와 일치 할 경우 메시지를 보내준다.
